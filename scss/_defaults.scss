@@ -1,0 +1,150 @@
+//* General Styles
+
+:focus {
+    outline: none;
+}
+
+.btn-blue {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: $brand-primary;
+    padding: 25px 20px;
+    border-radius: 4px;
+    transition: .3s;
+
+    .fa {
+        margin-right: 10px;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: darken($brand-primary, 5%);
+    }
+}
+
+button {
+    font-weight: 600;
+    padding: 12px 24px;
+    height: 50px;
+}
+
+
+
+//* Header Styles
+
+.header-image .site-title > a {
+    background-size: 100%;
+}
+
+.title-area {
+    width: 200px;
+}
+
+.genesis-nav-menu .sub-menu a {
+    background-color: #56c5d0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+
+    &:hover {
+        color: #e6e6e6;
+    }
+}
+
+.genesis-nav-menu a,
+#custom_html-2 .nav-link {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 53px 20px;
+    letter-spacing: 1px;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
+    color: #2899d5;
+    text-decoration: none;
+    border-bottom: 8px solid;
+    padding-bottom: 45px;
+}
+
+.genesis-nav-menu .current-menu-item > a {
+    font-weight: 600;
+}
+
+.nav-secondary {
+    background: $brand-secondary;
+    text-align: right;
+
+    .genesis-nav-menu a {
+        color: #fff;
+        font-size: 11px;
+        letter-spacing: 1px;
+        padding: 16px;
+
+        &:hover {
+            color: darken(#fff, 10%);
+        }
+    }
+}
+
+#nav_menu-2,
+#custom_html-2 {
+    display: inline-block;
+}
+
+#custom_html-2 {
+    .nav-link {
+        color: #333;
+        font-weight: 600;
+
+        &:hover {
+            color: $brand-secondary;
+        }
+    }
+
+    .fa {
+        margin-right: 10px;
+    }
+}
+
+.menu-item-has-children a > i {
+    margin-left: 10px;
+    font-size: 14px;
+    vertical-align: text-bottom;
+}
+
+.contact-us-menu,
+.live-chat-menu {
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.contact-us-menu {
+    color: #333;
+
+    &:hover {
+        color: $brand-primary;
+    }
+}
+
+.live-chat-menu {
+    color: #fff;
+    background-color: $brand-primary;
+    padding: 20px;
+    border-radius: 4px;
+
+    &:hover {
+        color: #fff;
+        background-color: darken($brand-primary, 5%);
+    }
+}
+

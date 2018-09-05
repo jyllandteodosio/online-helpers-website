@@ -1,0 +1,16 @@
+//* Break Point
+@mixin MQ($basis, $breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		$breakpoint: map-get($breakpoints, $breakpoint);
+	}
+	
+	@if $basis == min {
+		@media screen and (min-width: $breakpoint) {
+			@content;
+		}
+	} @else if $basis == max {
+		@media screen and (max-width: $breakpoint) {
+			@content;
+		}
+	}
+}
