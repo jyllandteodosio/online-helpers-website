@@ -73,7 +73,7 @@
 // Home - All Sections
 
 .section {
-    padding: 120px 0;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -143,11 +143,11 @@
     &:hover {
         background-color: $brand-primary;
         color: #ffffff;
-        
+
         .help-title {
             color: #ffffff;
         }
-        
+
         .help-image {
             display: none;
         }
@@ -155,5 +155,352 @@
         .help-image-hover {
             display: block;
         }
+    }
+}
+
+
+// Home - CTA Light Section
+
+.home-cta-light {
+    .content-wrap {
+        display: flex;
+    }
+
+    .left-content,
+    .right-content {
+        flex-basis: 50%;
+    }
+
+    .left-content {
+        text-align: left;
+        padding: 100px 0;
+    }
+
+    .btn-blue,
+    .btn-darkblue {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
+
+
+// Home - Services Section
+
+.home-services {
+    .section-title {
+        font-size: 40px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .section-subtitle p {
+        line-height: 2;
+    }
+
+    .services-wrap {
+        margin-top: 60px;
+    }
+
+    .services-section-title {
+        color: $brand-primary;
+        font-size: 30px;
+        font-weight: 300;
+        padding-top: 80px; 
+        margin-bottom: 10px;
+    }
+
+    .services-section-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+    }
+
+    hr {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .service-item {
+        flex-basis: 33%;
+        padding: 30px;
+        padding-bottom: 0;
+
+        img {
+            margin-bottom: 10px;
+        }
+    }
+
+    .service-item-title {
+        font-weight: 700;
+        color: $brand-primary;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .service-item-content {
+        color: #444444;
+        font-size: 13px;
+        line-height: 2;
+    }
+}
+
+
+// Home - Blog Section
+
+.home-blog {
+    background-color: #f7f7f7;
+    text-align: left;
+
+    .blog-wrap {
+        display: flex;
+    }
+
+    .blog-item {
+        flex-basis: 50%;
+        margin: 30px;
+        margin-left: 0px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+        cursor: pointer;
+        background-color: #fff;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    .blog-thumbnail {
+        position: relative;
+        max-height: 270px;
+        overflow: hidden;
+
+        img {
+            margin-top: -30px;
+        }
+    }
+
+    .blog-thumb-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .blog-content-wrap {
+        background-color: #fff;
+        padding: 30px;
+    }
+
+    .blog-stats {
+        margin-bottom: 10px;
+        color: #cccccc;
+        font-weight: 700;
+
+        span {
+            transition: .5 ease;
+            margin-right: 20px;
+
+            &:hover {
+                color: $brand-primary;
+            }
+
+            .fa {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .blog-title {
+        margin-bottom: 20px;
+
+        a {
+            color: $brand-secondary;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.5;
+
+            &:hover {
+                color: $brand-primary;
+            }
+        }
+    }
+
+    .blog-excerpt {
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .blog-read-more {
+        font-weight: 700;
+    }
+
+    .blog-view-more {
+        font-size: 16px;
+        font-weight: 700;
+        color: $brand-darkblue;
+        float: right;
+
+        .fa {
+            margin-left: 10px;
+        }
+    }
+}
+
+
+// Home - Stats Section
+
+.home-stats {
+    background-color: $brand-primary;
+
+    .section-title {
+        font-size: 48px;
+        margin-bottom: 60px;
+        color: #fff;
+    }
+
+    .stats-wrap {
+        display: flex;
+    }
+
+    .stats-item {
+        flex-basis: 20%;
+        margin-right: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        padding: 20px;
+        color: #fff;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    .stats-item-num {
+        font-size: 60px;
+    }
+
+    .stats-item-text {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+
+// Home - Clients Section
+
+.home-clients {
+
+    .section-title {
+        font-size: 36px;
+        color: $brand-secondary;
+        margin-bottom: 60px;
+    }
+
+    .clients-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .swiper-slide {
+            height: auto;
+        }
+    }
+
+    .clients-next,
+    .clients-prev {
+        background-image: none;
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    .clients-next {
+        right: -50px;
+    }
+
+    .clients-prev {
+        left: -50px;
+    }
+}
+
+
+// Home - Testimonials Section
+
+.home-testimonials {
+    padding-top: 0;
+
+    .section-title {
+        font-size: 36px;
+        color: $brand-secondary;
+        margin-bottom: 60px;
+    }
+
+    .testimonials-container {
+        position: relative;
+        width: 665px;
+        max-width: 100%;
+        height: auto;
+        min-height: 480px;
+        margin: 0 auto;
+        border-radius: 4px;
+        padding: 50px 40px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .test-image {
+        border-radius: 120px;
+        overflow: hidden;
+        height: 120px;
+        width: 120px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    .test-content {
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .test-name {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .testimonials-container > .testimonials-pagination {
+        bottom: 30px;
+    }
+}
+
+
+// Home - CTA Dark Section
+
+.home-cta-dark {
+    background-color: $brand-darkblue;
+    color: #fff;
+    padding-top: 200px;
+    margin-top: -200px;
+
+    .content-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .left-content,
+    .right-content {
+        flex-basis: 50%;
+    }
+    
+    .left-content {
+        text-align: left;
+    }
+    
+    .right-content {
+        text-align: right;
     }
 }

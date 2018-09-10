@@ -24,6 +24,13 @@ add_action( 'genesis_loop', 'content_home' );
 function content_home () {
     get_template_part('template/home-banner'); 
     get_template_part('template/home-help'); 
+    get_template_part('template/home-cta-light'); 
+    get_template_part('template/home-services'); 
+    get_template_part('template/home-blog'); 
+    get_template_part('template/home-stats'); 
+    get_template_part('template/home-clients'); 
+    get_template_part('template/home-testimonials'); 
+    get_template_part('template/home-cta-dark'); 
 }
 
 genesis();
