@@ -1,4 +1,4 @@
-<section class="home-help section">
+<section id="help" class="home-help section">
     
     <div class="wrap">
         

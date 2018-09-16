@@ -8,6 +8,14 @@ jQuery(document).ready(function($) {
             nextEl: '.clients-next.swiper-button-next',
             prevEl: '.clients-prev.swiper-button-prev',
         },
+        breakpoints: {
+            800: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 1,
+            }
+        }
     });
     
     var testimonials_swiper = new Swiper ('.testimonials-container', {

@@ -106,7 +106,7 @@ function genesis_custom_footer () {
         <div class="footer-column contact-column">
 
             <h5 class="footer-header"><?php echo get_field( 'contact_title', 'option' ); ?></h5>
-            <div class="footer-content">
+            <div class="footer-content contact-links">
                 <?php //echo the_field( 'contact_links', 'option' ); ?>
                 <?php if( have_rows( 'contact_links', 'option' ) ): ?>
                 <ul>

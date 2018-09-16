@@ -18,7 +18,7 @@
             </div>
         </div>
         
-        <a href="#" class="home-scroll"><i class="fa fa-arrow-down"></i></a>
+        <a href="#help" class="home-scroll"><i class="fa fa-arrow-down"></i></a>
     </div>
 
 </section>
