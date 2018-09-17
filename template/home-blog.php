@@ -26,10 +26,11 @@
                 </div>
 
                 <div class="blog-content-wrap">
-
+                    <?php /* ?>
                     <p class="blog-stats">
                         <span class="comment-count"><?php echo get_comments_number( $blog_id ); ?> <i class="fa fa-comment" ></i></span>
                     </p>
+                    <?php */ ?>
 
                     <h4 class="blog-title"><a href="<?php echo get_the_permalink( $blog_id ); ?>"><?php echo get_the_title( $blog_id ); ?></a></h4>
 

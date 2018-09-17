@@ -19,7 +19,17 @@ jQuery(document).ready(function($) {
         };
     }
 
-    //    $('ul.sub-menu').superfish('destroy');
+    function adjustWidth() {
+        var parentwidth = $(".site-container").width();
+        $(".site-header").width(parentwidth);
+    }
+
+    adjustWidth();
+
+    $(window).resize(function() {
+        console.log('adjusting header width');
+        adjustWidth();
+    });
 
     var responsive_menu_icons = '<div class="responsive-menu-icons">'
     +'<a href="#" class="contact-us-menu"><i class="fa fa-phone"></i><span>Contact Us</span></a>'
@@ -86,6 +96,13 @@ jQuery(document).ready(function($) {
             }
         }
 
+    });
+    
+    
+    // Help Item - trigger link
+    $('.help-item').click(function() {
+        var help_link = $(this).find('.help-link');
+        help_link[0].click();
     });
 
 });

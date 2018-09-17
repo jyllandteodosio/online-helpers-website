@@ -310,18 +310,18 @@ button {
 }
 
 @include mq('800px') {
-    .site-inner, .wrap {
-        padding-left: 0;
-        padding-right: 0;
-    }
+//    .site-inner, .wrap {
+//        padding-left: 0;
+//        padding-right: 0;
+//    }
 
     .section {
         padding: 100px 5% !important;
     }
 
     .site-footer .wrap {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
     }
 
     .footer-column {

@@ -25,7 +25,7 @@
                     
                     <div class="test-content"><?php echo apply_filters( 'the_content', get_post_field( 'post_content', $test_id ) ); ?></div>
                     
-                    <div class="test-name"><?php echo get_the_title( $test_id ); ?></div>
+                    <div class="test-name"><?php echo get_the_title( $test_id ); ?><br/><span class="test-subtitle"><?php echo get_field( 'client_testimonial_subtitle', $test_id ); ?></span></div>
                     
                 </div>
 
