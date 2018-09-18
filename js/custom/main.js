@@ -47,8 +47,10 @@ jQuery(document).ready(function($) {
     $(window).resize(function(){
         if(screen_width() <= 768) {
             $('.site-header .widget-area').hide();
+            $('.menu-item-has-children').append('<i class="fas fa-angle-down mobile-expand"></i>');
         } else {
             $('.site-header .widget-area').show();
+            $('.mobile-expand').remove();
         }
     });
 
@@ -69,22 +71,22 @@ jQuery(document).ready(function($) {
 
     if(screen_width() <= 768) {
         $('.menu-item-has-children').append('<i class="fas fa-angle-down mobile-expand"></i>');
-
-        $(document).on('click', '.mobile-expand', function() {
-
-            $(this).parents('.menu-item-has-children').find('ul.sub-menu').slideToggle();
-            
-            if($(this).hasClass('fa-angle-down')) {
-                $(this).addClass('fa-angle-up');
-                $(this).removeClass('fa-angle-down');
-            } else {
-                $(this).addClass('fa-angle-down');
-                $(this).removeClass('fa-angle-up');
-            }
-        });
     } else {
         $('.mobile-expand').remove();
     }
+
+    $(document).on('click', '.mobile-expand', function() {
+
+        $(this).parents('.menu-item-has-children').find('ul.sub-menu').slideToggle();
+
+        if($(this).hasClass('fa-angle-down')) {
+            $(this).addClass('fa-angle-up');
+            $(this).removeClass('fa-angle-down');
+        } else {
+            $(this).addClass('fa-angle-down');
+            $(this).removeClass('fa-angle-up');
+        }
+    });
 
     // Select all links with hashes
     $('a[href*="#"]')
