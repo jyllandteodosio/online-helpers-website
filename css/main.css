@@ -55,11 +55,12 @@ button {
   width: 200px; }
 
 .genesis-nav-menu .sub-menu a {
-  background-color: #56c5d0;
+  background-color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff; }
+  color: #333333; }
   .genesis-nav-menu .sub-menu a:hover {
-    color: #e6e6e6; }
+    color: #2899d5;
+    padding-bottom: 20px; }
 
 .genesis-nav-menu a,
 #custom_html-2 .nav-link {
@@ -109,7 +110,7 @@ button {
 .menu-item-has-children a > i {
   margin-left: 10px;
   font-size: 14px;
-  vertical-align: text-bottom; }
+  vertical-align: top; }
 
 .contact-us-menu,
 .live-chat-menu {
@@ -204,6 +205,9 @@ button {
   font-weight: 300;
   opacity: 0.3;
   text-align: left; }
+
+.single .entry-header {
+  margin-bottom: 30px; }
 
 @media screen and (max-width: 960px) {
   .header-image .site-title > a {
@@ -708,6 +712,9 @@ button {
   .home-testimonials .test-name {
     font-size: 18px;
     font-weight: 600; }
+  .home-testimonials .test-subtitle {
+    font-size: 14px;
+    color: #999; }
   .home-testimonials .testimonials-container > .testimonials-pagination {
     bottom: 30px; }
 
@@ -800,9 +807,10 @@ button {
     -webkit-transition: background 0.3s ease-in-out;
     transition: background 0.3s ease-in-out;
     color: #333333;
-    line-height: 2; }
-    .experts-cta-full .experts-cta-item:first-of-type {
-      margin-right: 30px; }
+    line-height: 2;
+    margin-right: 30px; }
+    .experts-cta-full .experts-cta-item:nth-of-type(2n) {
+      margin-right: 0px; }
     .experts-cta-full .experts-cta-item p:last-of-type {
       margin-bottom: 0; }
 
@@ -1203,7 +1211,8 @@ button {
     .videos-multi-content .right-content p:last-of-type {
       margin-bottom: 0; }
   .videos-multi-content .right-content {
-    padding-top: 60px; }
+    padding-top: 60px;
+    margin-bottom: 60px; }
   .video-testimonials .site-inner {
     padding-left: 0;
     padding-right: 0; }
@@ -1252,6 +1261,8 @@ button {
   #big-video,
   .video-text-wrap {
     height: 432px; }
+  .videos-slider {
+    overflow: hidden; }
   .inner-cta-light {
     padding-bottom: 100px !important; }
     .inner-cta-light .left-content {

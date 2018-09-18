@@ -87,12 +87,13 @@ button {
 }
 
 .genesis-nav-menu .sub-menu a {
-    background-color: #56c5d0;
+    background-color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #fff;
+    color: $brand-secondary;
 
     &:hover {
-        color: #e6e6e6;
+        color: $brand-primary;
+        padding-bottom: 20px;
     }
 }
 
@@ -159,7 +160,7 @@ button {
 .menu-item-has-children a > i {
     margin-left: 10px;
     font-size: 14px;
-    vertical-align: text-bottom;
+    vertical-align: top;
 }
 
 .contact-us-menu,
@@ -285,6 +286,12 @@ button {
     text-align: left;
 }
 
+
+//* Single Posts
+
+.single .entry-header {
+    margin-bottom: 30px;
+}
 
 //* Media Queries
 

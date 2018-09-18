@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
     console.log('Wistia Embed JS -- Loaded');
 
-    $('.videos-item-video, .wistia-video').magnificPopup({
+    $('.wistia-video').magnificPopup({
         type: 'iframe',
         iframe: {
             patterns: {
@@ -22,5 +22,15 @@ jQuery(document).ready(function($) {
             }
         }
     });
+    
+    $('.vimeo-video').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
 
 });

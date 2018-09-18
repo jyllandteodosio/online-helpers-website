@@ -14,9 +14,19 @@
 
                 <div class="videos-item swiper-slide">
                     
-                    <a class="videos-item-video" href="https://home.wistia.com/medias/<?php echo get_sub_field( 'video_embed_id' ); ?>">
+                    <?php if( get_sub_field( 'video_type' ) == 'wistia' ): ?>
+                    
+                    <a class="videos-item-video wistia-video" href="https://home.wistia.com/medias/<?php echo get_sub_field( 'video_embed_id' ); ?>">
                         <img src="<?php echo get_sub_field( 'video_item_thumbnail' ); ?>" alt="<?php echo get_sub_field( 'video_item_title' ); ?>"/>
                     </a>
+                    
+                    <?php elseif( get_sub_field( 'video_type' ) == 'vimeo' ): ?>
+                    
+                    <a class="videos-item-video vimeo-video" href="<?php echo get_sub_field( 'video_vimeo_link' ); ?>">
+                        <img src="<?php echo get_sub_field( 'video_item_thumbnail' ); ?>" alt="<?php echo get_sub_field( 'video_item_title' ); ?>"/>
+                    </a>
+                    
+                    <?php endif; ?>
 
                     <div class="videos-item-wrap">
 
