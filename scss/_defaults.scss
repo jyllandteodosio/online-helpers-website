@@ -114,7 +114,18 @@ button {
     color: #2899d5;
     text-decoration: none;
     border-bottom: 8px solid;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus,
+.genesis-nav-menu .current-menu-item > a {
     padding-bottom: 45px;
+}
+
+.genesis-nav-menu .sub-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus {
+    padding-bottom: 20px;
 }
 
 .genesis-nav-menu .current-menu-item > a {
@@ -157,10 +168,33 @@ button {
     }
 }
 
-.menu-item-has-children a > i {
-    margin-left: 10px;
-    font-size: 14px;
-    vertical-align: top;
+.menu-item-has-children {
+    &.current-menu-item {
+        background: $brand-primary;
+    }
+
+    a {
+        > i {
+            margin-left: 10px;
+            font-size: 14px;
+            vertical-align: top;
+        }
+    }
+
+    .mobile-expand {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        padding: 10px;
+    }
+
+
+    &.current-menu-item,
+    &:hover,
+    &:active,
+    &:focus {
+        color: #fff;
+    }
 }
 
 .contact-us-menu,
@@ -192,6 +226,9 @@ button {
 
 .responsive-menu-icons {
     display: none;
+    height: 72px;
+    float: right;
+    align-items: center;
 }
 
 .responsive-menu-icon {
@@ -317,10 +354,10 @@ button {
 }
 
 @include mq('800px') {
-//    .site-inner, .wrap {
-//        padding-left: 0;
-//        padding-right: 0;
-//    }
+    //    .site-inner, .wrap {
+    //        padding-left: 0;
+    //        padding-right: 0;
+    //    }
 
     .section {
         padding: 100px 5% !important;
@@ -347,6 +384,58 @@ button {
 }
 
 @include mq(tablet-portrait) {
+
+    .genesis-nav-menu {
+
+        .menu-item {
+            > .sub-menu a {
+                width: 100%; 
+                padding-left: 20px !important;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            .sub-menu {
+                width: 100%;
+                position: relative;
+                background: #fff;
+            }
+
+            &:hover {
+                position: relative;
+            }
+
+            &:hover > .sub-menu {
+                position: relative;
+                width: 100%; 
+            }
+        }
+    }
+
+
+    .menu-item-has-children {
+        position: relative;
+        
+        a {
+            width: 90%;
+        }
+
+        > a > i {
+            display: none;
+        }
+
+        .mobile-expand {
+            color: $brand-secondary; 
+        }
+        
+        &.current-menu-item {
+            .mobile-expand {
+                color: #fff;
+            }
+        }
+    }
 
     .contact-us-menu,
     .live-chat-menu {
@@ -403,9 +492,10 @@ button {
     }
 
     .responsive-menu-icons {
-        display: block;
+        display: flex;
         text-align: right;
         padding: 23px 0;
+        height: 108px;
 
         .contact-us-menu, 
         .live-chat-menu {
@@ -416,7 +506,7 @@ button {
 
 @include mq('426px') {
     .header-image .site-title > a {
-        background-size: 80%;
+        background-size: 70%;
         min-height: 80px;
     }
 
@@ -453,5 +543,14 @@ button {
 
     .menu-column {
         margin-right: 30px;
+    }
+
+    .responsive-menu-icons {
+        display: flex;
+        height: 72px;
+    }
+
+    .menu-item-has-children a {
+        width: 80%;
     }
 }

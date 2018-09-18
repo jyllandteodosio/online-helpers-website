@@ -28,7 +28,7 @@
                 <div class="blog-content-wrap">
                     <?php /* ?>
                     <p class="blog-stats">
-                        <span class="comment-count"><?php echo get_comments_number( $blog_id ); ?> <i class="fa fa-comment" ></i></span>
+                        <span class="comment-count"><?php echo get_comments_number( $blog_id ); ?> <i class="fas fa-comment" ></i></span>
                     </p>
                     <?php */ ?>
 
@@ -47,7 +47,7 @@
 
         </div>
 
-        <a class="blog-view-more" href="<?php echo get_field( 'view_blogs_link' ); ?>">VIEW ALL BLOG POSTS <i class="fa fa-arrow-right"></i></a>
+        <a class="blog-view-more" href="<?php echo get_field( 'view_blogs_link' ); ?>">VIEW ALL BLOG POSTS <i class="fas fa-arrow-right"></i></a>
 
     </div>
 

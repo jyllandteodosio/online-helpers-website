@@ -19,6 +19,11 @@ remove_action( 'genesis_before_loop', 'genesis_do_blog_template_heading' );
 
 //* Remove the entry meta in the entry header (requires HTML5 theme support)
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+add_action( 'genesis_entry_header', 'blog_thumbnail', 1 );
+
+function blog_thumbnail () {
+    the_post_thumbnail();
+}
 
 //* Remove the entry meta in the entry footer (requires HTML5 theme support)
 remove_action( 'genesis_entry_footer', 'genesis_post_meta' );

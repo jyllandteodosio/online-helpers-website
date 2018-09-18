@@ -49,11 +49,11 @@
             </div>
 
             <div class="videos-next swiper-button-next">
-                <i class="fa fa-angle-right"></i>
+                <i class="fas fa-angle-right"></i>
             </div>
             
             <div class="videos-prev swiper-button-prev">
-                <i class="fa fa-angle-left"></i>
+                <i class="fas fa-angle-left"></i>
             </div>
 
             <div class="videos-pagination swiper-pagination"></div>

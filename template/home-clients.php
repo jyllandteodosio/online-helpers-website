@@ -25,10 +25,10 @@
             </div>
 
             <div class="clients-next swiper-button-next">
-                <i class="fa fa-angle-right"></i>
+                <i class="fas fa-angle-right"></i>
             </div>
             <div class="clients-prev swiper-button-prev">
-                <i class="fa fa-angle-left"></i>
+                <i class="fas fa-angle-left"></i>
             </div>
 
         </div>

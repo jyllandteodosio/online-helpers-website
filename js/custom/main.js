@@ -31,9 +31,14 @@ jQuery(document).ready(function($) {
         adjustWidth();
     });
 
+    //    var responsive_menu_icons = '<div class="responsive-menu-icons">'
+    //    +'<a href="https://onlinehelpers.com.au/contact-us/" class="contact-us-menu"><i class="fas fa-phone"></i><span>Contact Us</span></a>'
+    //    +'<a href="#" class="live-chat-menu"><i class="fas fa-comments"></i><span>Live Chat</span></a>'
+    //    +'<a href="#" class="responsive-menu-icon">MENU</a>'
+    //    +'</div>';
+
     var responsive_menu_icons = '<div class="responsive-menu-icons">'
-    +'<a href="#" class="contact-us-menu"><i class="fa fa-phone"></i><span>Contact Us</span></a>'
-    +'<a href="#" class="live-chat-menu"><i class="fa fa-comments"></i><span>Live Chat</span></a>'
+    +'<a href="tel:1300536626" class="contact-us-menu"><i class="fas fa-phone"></i><span>Contact Us</span></a>'
     +'<a href="#" class="responsive-menu-icon">MENU</a>'
     +'</div>';
 
@@ -60,8 +65,26 @@ jQuery(document).ready(function($) {
         disableHI:   true                   
     });
 
-    $('.menu-item-has-children > a').append('<i class="fa fa-angle-down"></i>');
+    $('.menu-item-has-children > a').append('<i class="fas fa-angle-down"></i>');
 
+    if(screen_width() <= 768) {
+        $('.menu-item-has-children').append('<i class="fas fa-angle-down mobile-expand"></i>');
+
+        $(document).on('click', '.mobile-expand', function() {
+
+            $(this).parents('.menu-item-has-children').find('ul.sub-menu').slideToggle();
+            
+            if($(this).hasClass('fa-angle-down')) {
+                $(this).addClass('fa-angle-up');
+                $(this).removeClass('fa-angle-down');
+            } else {
+                $(this).addClass('fa-angle-down');
+                $(this).removeClass('fa-angle-up');
+            }
+        });
+    } else {
+        $('.mobile-expand').remove();
+    }
 
     // Select all links with hashes
     $('a[href*="#"]')
@@ -97,8 +120,8 @@ jQuery(document).ready(function($) {
         }
 
     });
-    
-    
+
+
     // Help Item - trigger link
     $('.help-item').click(function() {
         var help_link = $(this).find('.help-link');
