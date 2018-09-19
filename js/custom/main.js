@@ -77,14 +77,14 @@ jQuery(document).ready(function($) {
 
     $(document).on('click', '.mobile-expand', function() {
 
-        $(this).parents('.menu-item-has-children').find('ul.sub-menu').slideToggle();
-
         if($(this).hasClass('fa-angle-down')) {
-            $(this).addClass('fa-angle-up');
             $(this).removeClass('fa-angle-down');
+            $(this).addClass('fa-angle-up');
+            $(this).parents('.menu-item-has-children').find('ul.sub-menu').slideDown();
         } else {
-            $(this).addClass('fa-angle-down');
             $(this).removeClass('fa-angle-up');
+            $(this).addClass('fa-angle-down');
+            $(this).parents('.menu-item-has-children').find('ul.sub-menu').slideUp();
         }
     });
 

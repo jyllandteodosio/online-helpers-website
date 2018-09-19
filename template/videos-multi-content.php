@@ -10,12 +10,20 @@
         
             <div class="content-wrap">
 
-                <div class="left-content">
+                <div class="left-content desktop-content">
                     <?php echo the_sub_field( 'video_multi_left_content' ); ?>
                 </div>
 
-                <div class="right-content">
+                <div class="left-content mobile-content">
+                    <?php echo the_sub_field( 'video_multi_left_content_mobile' ); ?>
+                </div>
+
+                <div class="right-content desktop-content">
                     <?php echo the_sub_field( 'video_multi_right_content' ); ?>
+                </div>
+
+                <div class="right-content mobile-content">
+                    <?php echo the_sub_field( 'video_multi_right_content_mobile' ); ?>
                 </div>
 
             </div>

@@ -924,6 +924,10 @@
         padding-right: 40px;
     }
 
+    .mobile-content {
+        display: none;
+    }
+
     .circle-icon {
         text-align: center;
         height: 60px;
@@ -1231,6 +1235,7 @@
 
             &:last-of-type {
                 border-bottom: none;
+                padding-bottom: 0;
             }
 
             &:nth-child(2n) .right-content {
@@ -1541,17 +1546,36 @@
         text-align: center;
     }
 
-    .videos-multi-content .section-title {
-        padding: 0 10px;
+    .videos-multi-content {
+        .section-title {
+            padding: 0 10px;
 
-        p {
-            font-size: 36px;
-            line-height: 1.5;
+            p {
+                font-size: 36px;
+                line-height: 1.5;
 
-            br {
-                display: none;
+                br {
+                    display: none;
+                }
+            }
+        } 
+
+        .mobile-content {
+            display: block;
+            padding: 20px 0;
+
+            &:last-of-type {
+                padding-bottom: 0;
             }
         }
+
+        .desktop-content {
+            display: none;
+        }
+    }
+
+    .videos-slider .section-title {
+        font-size: 36px;
     }
 
     .about-multi-content h1 {
