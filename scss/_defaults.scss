@@ -430,6 +430,15 @@ button {
             color: $brand-secondary; 
         }
         
+        &:hover,
+        &:active,
+        &:focus {
+            background: $brand-primary;
+        }
+        
+        &:hover,
+        &:active,
+        &:focus,
         &.current-menu-item {
             .mobile-expand {
                 color: #fff;
