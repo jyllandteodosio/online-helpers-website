@@ -290,7 +290,11 @@ button {
       color: #333333; }
     .menu-item-has-children:hover, .menu-item-has-children:active, .menu-item-has-children:focus {
       background: #2899d5; }
-    .menu-item-has-children:hover .mobile-expand, .menu-item-has-children:active .mobile-expand, .menu-item-has-children:focus .mobile-expand, .menu-item-has-children.current-menu-item .mobile-expand {
+    .menu-item-has-children:hover > a,
+    .menu-item-has-children:hover .mobile-expand, .menu-item-has-children:active > a,
+    .menu-item-has-children:active .mobile-expand, .menu-item-has-children:focus > a,
+    .menu-item-has-children:focus .mobile-expand, .menu-item-has-children.current-menu-item > a,
+    .menu-item-has-children.current-menu-item .mobile-expand {
       color: #fff; }
   .contact-us-menu,
   .live-chat-menu {

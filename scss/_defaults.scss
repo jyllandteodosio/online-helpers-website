@@ -440,8 +440,9 @@ button {
         &:active,
         &:focus,
         &.current-menu-item {
+            > a,
             .mobile-expand {
-                color: #fff;
+                color: #fff; 
             }
         }
     }
