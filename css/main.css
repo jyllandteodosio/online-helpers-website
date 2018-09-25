@@ -406,32 +406,6 @@ button {
   vertical-align: middle;
   font-size: 18px;
   padding-bottom: 60px; }
-  .banner-text .banner-background {
-    background-color: #252a30;
-    text-align: center;
-    position: relative; }
-  .banner-text .banner-text-wrap {
-    width: 100%;
-    display: table;
-    height: 600px; }
-  .banner-text .banner-text {
-    color: #fff;
-    text-align: center;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 18px;
-    padding-bottom: 60px; }
-    .banner-text .banner-text .banner-title {
-      font-size: 72px;
-      font-weight: 300; }
-    .banner-text .banner-text h1 {
-      color: #fff;
-      font-size: 18px;
-      margin-top: 20px;
-      margin-bottom: 14px; }
-    .banner-text .banner-text .banner-subtitle {
-      padding-bottom: 30px; }
   .banner-text .banner-title {
     font-size: 72px;
     font-weight: 300; }
@@ -1188,6 +1162,74 @@ button {
   vertical-align: middle;
   border-radius: 40px; }
 
+.portfolio-page h1 {
+  text-align: center; }
+
+.portfolio-grid {
+  text-align: center;
+  padding-bottom: 100px; }
+
+.portfolio-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-top: 60px; }
+  .portfolio-wrap .portfolio-item {
+    -webkit-flex-basis: 22.5%;
+        -ms-flex-preferred-size: 22.5%;
+            flex-basis: 22.5%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 250px; }
+    .portfolio-wrap .portfolio-item:last-of-type {
+      margin-right: 0; }
+  .portfolio-wrap .portfolio-hover {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .portfolio-wrap .portfolio-item-video,
+  .portfolio-wrap .portfolio-item-link {
+    height: 100%;
+    width: 100%;
+    display: block;
+    line-height: 250px;
+    -webkit-transition: .3 ease;
+    transition: .3 ease;
+    background: rgba(0, 0, 0, 0.1); }
+    .portfolio-wrap .portfolio-item-video:hover,
+    .portfolio-wrap .portfolio-item-link:hover {
+      background: rgba(0, 0, 0, 0.5); }
+    .portfolio-wrap .portfolio-item-video i,
+    .portfolio-wrap .portfolio-item-link i {
+      vertical-align: middle;
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4); }
+
+.p-category-wrap {
+  padding-top: 40px;
+  font-size: 18px; }
+  .p-category-wrap li {
+    display: inline-block;
+    margin: 9px 0; }
+    .p-category-wrap li a {
+      color: #2899d5;
+      padding: 8px 12px;
+      border: 1px solid #2899d5;
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
+      .p-category-wrap li a.current, .p-category-wrap li a:active, .p-category-wrap li a:hover, .p-category-wrap li a:focus {
+        color: #fff;
+        background-color: #2899d5;
+        border-color: #2899d5; }
+
 @media screen and (max-width: 1200px) {
   .site-header .widget-area,
   .title-area {
@@ -1325,7 +1367,13 @@ button {
     margin-bottom: 40px;
     padding-bottom: 40px; }
     .inner-banner-page .entry:last-of-type {
-      padding-bottom: 0px; } }
+      padding-bottom: 0px; }
+  .portfolio-wrap .portfolio-item {
+    -webkit-flex-basis: 47%;
+        -ms-flex-preferred-size: 47%;
+            flex-basis: 47%; }
+    .portfolio-wrap .portfolio-item:nth-of-type(2n) {
+      margin-right: 0; } }
 
 @media screen and (max-width: 768px) {
   .home-cta-light {
@@ -1521,7 +1569,19 @@ button {
   .about-multi-content h1 {
     font-size: 48px; }
   .inner-banner-page .inner-banner .banner-text-wrap {
-    height: 200px; } }
+    height: 200px; }
+  .portfolio-wrap {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .portfolio-wrap .portfolio-item {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+      margin-right: 0;
+      max-width: 250px; } }
 
 @media screen and (max-width: 376px) {
   .videos-container .videos-next,
