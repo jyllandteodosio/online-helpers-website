@@ -477,10 +477,12 @@ button {
 
 .home-banner {
   background-color: #30353b;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .home-banner .banner-background {
     background: none;
-    z-index: 2; }
+    z-index: 2;
+    overflow: hidden; }
   .home-banner .banner-button {
     display: inline-block; }
 
@@ -1385,6 +1387,8 @@ button {
     padding-right: 0; } }
 
 @media screen and (max-width: 800px) {
+  .banner-svg {
+    width: 200% !important; }
   .home .site-inner, .home .wrap {
     padding-left: 0;
     padding-right: 0; }
@@ -1547,6 +1551,8 @@ button {
     font-size: 48px; } }
 
 @media screen and (max-width: 426px) {
+  .banner-svg {
+    width: 400% !important; }
   .inner-banner-page .inner-banner {
     margin-top: 90px; }
   .banner-text-wrap {

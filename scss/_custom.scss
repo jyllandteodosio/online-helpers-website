@@ -63,15 +63,15 @@
 }
 
 @keyframes fadeIn {
-	0% {
-		opacity: 0;		
-	}
-	10% {
-		opacity: 0;		
-	}
-	100% {
-		opacity: .5;	
-	}		
+    0% {
+        opacity: 0;		
+    }
+    10% {
+        opacity: 0;		
+    }
+    100% {
+        opacity: .5;	
+    }		
 }
 
 
@@ -123,10 +123,12 @@
 .home-banner {
     background-color: $brand-darkblue;
     position: relative;
+    text-align: center;
 
     .banner-background {
         background: none;
         z-index: 2;
+        overflow: hidden;
     }
 
     .banner-button {
@@ -1330,6 +1332,10 @@
 }
 
 @include mq('800px') {
+    .banner-svg {
+        width: 200% !important;
+    }
+
     .home {
         .site-inner, .wrap {
             padding-left: 0;
@@ -1557,6 +1563,9 @@
 }
 
 @include mq('426px') {
+    .banner-svg {
+        width: 400% !important;
+    }
 
     .inner-banner-page {
         .inner-banner {
