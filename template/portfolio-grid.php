@@ -67,7 +67,7 @@
                 'post_type' => 'portfolio',
                 'posts_per_page' => -1,
                 'orderby' => 'date',
-                'order' => 'ASC'
+                'order' => 'DESC'
             );
             
             if( $current_category != 'all' ) {

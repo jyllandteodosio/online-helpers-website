@@ -53,6 +53,14 @@
 
 }
 
+.banner-svg {
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
 .home-scroll {
     background-color: $brand-primary;
     color: #fff;
@@ -95,6 +103,22 @@
     font-size: 18px;
 }
 
+
+// Home - Banner Section
+
+.home-banner {
+    background-color: $brand-darkblue;
+    position: relative;
+
+    .banner-background {
+        background: none;
+        z-index: 2;
+    }
+
+    .banner-button {
+        display: inline-block;
+    }
+}
 
 // Home - Help Section
 
@@ -1015,11 +1039,13 @@
 
 .portfolio-page h1 {
     text-align: center;
+    margin-top: 20px;
+    font-size: 48px;
 }
 
 .portfolio-grid {
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 100px; 
 }
 
 .portfolio-wrap {
@@ -1093,6 +1119,80 @@
         }
     }
 
+}
+
+
+//* Custom Websites
+
+.custom-websites {
+    background: #f7f7f7;
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    .websites-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+    }
+
+    .website-item {
+        flex-basis: 31%;
+        margin-right: 30px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    .website-item-hover {
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .website-item-link {
+        height: 100%;
+        display: block;
+        line-height: 250px;
+        transition: .3 ease;
+        background: rgba(0,0,0,0.1);
+
+        &:hover {
+            background: rgba(0,0,0,0.5);
+        }
+
+        i {
+            vertical-align: middle;
+            color: #fff;
+            font-size: 30px;
+            text-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+        }
+    }
+
+    .website-item-title {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .website-view-more {
+        font-size: 16px;
+        font-weight: 700;
+        color: $brand-secondary;
+        float: right;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $brand-primary;
+        }
+
+        i {
+            margin-left: 10px;
+        }
+    }
 }
 
 
@@ -1333,6 +1433,17 @@
 
         &:nth-of-type(2n) {
             margin-right: 0; 
+        }
+    }
+
+    .websites-wrap {
+        justify-content: center;
+
+        .website-item {
+            flex-basis: 100%;
+            max-width: 370px;
+            margin-right: 0;
+            margin-bottom: 30px;
         }
     }
 }
@@ -1651,6 +1762,10 @@
             margin-right: 0;
             max-width: 250px;
         }
+    }
+
+    .custom-websites .section-title {
+        font-size: 32px;
     }
 }
 
