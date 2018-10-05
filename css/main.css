@@ -116,9 +116,6 @@ button {
 #custom_html-2 i {
   margin-right: 10px; }
 
-.menu-item-has-children.current-menu-item {
-  background: #2899d5; }
-
 .menu-item-has-children a > i {
   margin-left: 10px;
   font-size: 14px;
@@ -266,6 +263,8 @@ button {
     padding: 0px; } }
 
 @media screen and (max-width: 768px) {
+  .header-image .site-title > a {
+    background-position: left center; }
   .genesis-nav-menu .menu-item > .sub-menu a {
     width: 100%;
     padding-left: 20px !important; }
@@ -282,6 +281,8 @@ button {
     width: 100%; }
   .menu-item-has-children {
     position: relative; }
+    .menu-item-has-children.current-menu-item {
+      background: #2899d5; }
     .menu-item-has-children a {
       width: 90%; }
     .menu-item-has-children > a > i {
@@ -444,7 +445,7 @@ button {
     opacity: .5; } }
 
 .home-scroll {
-  background-color: #2899d5;
+  background-color: #30353b;
   color: #fff;
   height: 60px;
   width: 60px;
@@ -457,10 +458,11 @@ button {
   left: 0;
   right: 0;
   margin: auto;
-  margin-bottom: -30px; }
+  margin-bottom: -30px;
+  z-index: 2; }
   .home-scroll:active, .home-scroll:hover, .home-scroll:focus {
     color: #fff;
-    background-color: #248ac0; }
+    background-color: #25282d; }
 
 .section {
   padding: 100px 0;
@@ -476,7 +478,7 @@ button {
   font-size: 18px; }
 
 .home-banner {
-  background-color: #30353b;
+  background-color: #2899d5;
   position: relative;
   text-align: center; }
   .home-banner .banner-background {
@@ -484,7 +486,8 @@ button {
     z-index: 2;
     overflow: hidden; }
   .home-banner .banner-button {
-    display: inline-block; }
+    display: inline-block;
+    border: 2px solid #fff; }
 
 .home-help {
   background-color: #f7f7f7; }

@@ -169,9 +169,6 @@ button {
 }
 
 .menu-item-has-children {
-    &.current-menu-item {
-        background: $brand-primary;
-    }
 
     a {
         > i {
@@ -385,6 +382,10 @@ button {
 
 @include mq(tablet-portrait) {
 
+    .header-image .site-title > a {
+        background-position: left center;
+    }
+
     .genesis-nav-menu {
 
         .menu-item {
@@ -417,7 +418,11 @@ button {
 
     .menu-item-has-children {
         position: relative;
-        
+
+        &.current-menu-item {
+            background: $brand-primary;
+        }
+
         a {
             width: 90%;
         }
@@ -429,13 +434,13 @@ button {
         .mobile-expand {
             color: $brand-secondary; 
         }
-        
+
         &:hover,
         &:active,
         &:focus {
             background: $brand-primary;
         }
-        
+
         &:hover,
         &:active,
         &:focus,
