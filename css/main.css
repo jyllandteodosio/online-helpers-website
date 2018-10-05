@@ -145,7 +145,8 @@ button {
   color: #fff;
   background-color: #2899d5;
   padding: 20px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  display: inline-block; }
   .live-chat-menu:hover {
     color: #fff;
     background-color: #248ac0; }

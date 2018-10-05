@@ -214,6 +214,7 @@ button {
     background-color: $brand-primary;
     padding: 20px;
     border-radius: 4px;
+    display: inline-block;
 
     &:hover {
         color: #fff;

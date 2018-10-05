@@ -39,6 +39,7 @@ jQuery(document).ready(function($) {
 
     var responsive_menu_icons = '<div class="responsive-menu-icons">'
     +'<a href="tel:1300536626" class="contact-us-menu"><i class="fas fa-phone"></i><span>Contact Us</span></a>'
+    +'<a href="javascript:void(0);" class="live-chat-menu" onclick="olark(\'api.box.expand\')"><i class="fas fa-comments"></i><span>Live Chat</span></a>'
     +'<a href="#" class="responsive-menu-icon">MENU</a>'
     +'</div>';
 
@@ -128,6 +129,14 @@ jQuery(document).ready(function($) {
     $('.help-item').click(function() {
         var help_link = $(this).find('.help-link');
         help_link[0].click();
+    });
+    
+    
+    // Live Chat 
+    olark('api.box.hide');
+
+    $(document).on('click', '.live-chat-menu', function() {
+        olark('api.box.show');
     });
 
 });
